@@ -1,0 +1,13 @@
+## Ignore file for B&R Automation Studio
+## Roman Vancura, 7.8.2017
+
+# Folders
+AS/system
+Binaries
+Diagnosis
+Temp
+
+# User Files
+/*.isopen
+BusNavigator.xostd
+/*.set
