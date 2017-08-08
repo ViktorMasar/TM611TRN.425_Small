@@ -6,11 +6,40 @@
       <ACE Role="Operator" />
       <ACE Role="Everyone" />
       <ACE Role="Administrators" Write="True" />
+      <ACE Role="Supervisor" Write="True" />
     </ACL>
     <Module>
       <GlobalVariables Name="Global PV">
         <Variable Name="CurrentTemperature" Enable="True" />
-        <Variable Name="SetTemperature" Enable="True" />
+        <Variable Name="SetTemperature" Enable="True">
+          <ACL Inherit="InheritNone">
+            <ACE Role="Service" Write="True" />
+            <ACE Role="Operator" />
+            <ACE Role="Everyone" />
+            <ACE Role="Administrators" Write="True" />
+            <ACE Role="Supervisor" Write="True" />
+          </ACL>
+          <Property BrowseName="4:EURangeViolation">
+            <Value>
+              <EURangeViolation>2</EURangeViolation>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EURange">
+            <Value>
+              <Low ValueProvider="Const">30</Low>
+              <High ValueProvider="Const">50</High>
+            </Value>
+          </Property>
+          <Property BrowseName="0:EURange" Priority="1">
+            <ACL Inherit="InheritNone">
+              <ACE Role="Supervisor" />
+            </ACL>
+            <Value>
+              <Low ValueProvider="Const">20</Low>
+              <High ValueProvider="Const">60</High>
+            </Value>
+          </Property>
+        </Variable>
       </GlobalVariables>
     </Module>
   </DefaultView>

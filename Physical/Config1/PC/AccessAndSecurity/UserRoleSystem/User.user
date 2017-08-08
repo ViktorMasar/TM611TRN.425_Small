@@ -20,4 +20,11 @@
       <Property ID="Role[1]" Value="Service" />
     </Group>
   </Element>
+  <Element ID="Mike" Type="User">
+    <Property ID="UserID" Value="4" />
+    <Property ID="Password" Value="6PRPyU+opnis1CsDIA662/NOaj92lSqg0R93vVIfFuSyVyBUfnI=" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Supervisor" />
+    </Group>
+  </Element>
 </Configuration>
