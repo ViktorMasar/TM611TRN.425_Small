@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <OpcUaSource FileVersion="3">
   <DefaultView>
+    <ACL>
+      <ACE Role="Service" Write="True" />
+      <ACE Role="Operator" />
+      <ACE Role="Everyone" />
+      <ACE Role="Administrators" Write="True" />
+    </ACL>
     <Module>
       <GlobalVariables Name="Global PV">
         <Variable Name="CurrentTemperature" Enable="True" />
