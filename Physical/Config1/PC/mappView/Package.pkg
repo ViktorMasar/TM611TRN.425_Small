@@ -5,5 +5,6 @@
     <Object Type="File">Config.mappviewcfg</Object>
     <Object Type="File">Visualization.vis</Object>
     <Object Type="File">Navigation.nav</Object>
+    <Object Type="File">Binding.binding</Object>
   </Objects>
 </Package>

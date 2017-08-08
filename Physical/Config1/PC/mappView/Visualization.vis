@@ -10,7 +10,7 @@
     <Navigation refId="AutoNavigation" />
   </Navigations>  
   <BindingsSets>
-    <!--<BindingsSet refId="" />-->
+    <BindingsSet refId="MyBinding" />
   </BindingsSets>
   <EventBindingsSets>
     <!--<EventBindingsSet refId="" />-->
