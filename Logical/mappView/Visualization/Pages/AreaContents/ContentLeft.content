@@ -8,5 +8,6 @@
         <Widget xsi:type="widgets.brease.NavigationButton" id="AlarmPageButton" top="0" left="0" width="100" height="30" zIndex="2" pageId="AlarmPage" text="AlarmPage" backColor="rgba(0, 255, 0, 1)" />
       </Widgets>
     </Widget>
+    <Widget xsi:type="widgets.brease.NavigationButton" id="NavigationButton1" top="452" left="26" width="48" height="48" zIndex="1" image="Media/Home.png" pageId="MainPage" text="NavigationButtonHome" style="transparent" />
   </Widgets>
 </Content>
