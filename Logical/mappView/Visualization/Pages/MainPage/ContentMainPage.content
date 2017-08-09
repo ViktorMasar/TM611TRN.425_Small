@@ -5,5 +5,6 @@
     <Widget xsi:type="widgets.brease.Button" id="Button2" top="80" left="400" width="100" height="30" zIndex="1" text="Button2" style="Operate1" />
     <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputSetTemperature" top="180" left="100" width="100" height="30" zIndex="2" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputActTemperature" top="180" left="400" width="100" height="30" zIndex="3" />
+    <Widget xsi:type="widgets.brease.LanguageSelector" id="LanguageSelector1" top="420" left="460" width="100" height="30" zIndex="4" />
   </Widgets>
 </Content>

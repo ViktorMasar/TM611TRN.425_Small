@@ -8,5 +8,6 @@
     <Object Type="Program" Language="IEC">Program</Object>
     <Object Type="Package">Images</Object>
     <Object Type="Package">mappView</Object>
+    <Object Type="File">Project.language</Object>
   </Objects>
 </Package>
