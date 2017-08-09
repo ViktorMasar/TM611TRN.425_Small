@@ -5,6 +5,10 @@
     <Widget xsi:type="widgets.brease.Button" id="Button2" top="80" left="400" width="100" height="30" zIndex="1" text="Button2" style="Operate1" />
     <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputSetTemperature" top="180" left="100" width="100" height="30" zIndex="2" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputActTemperature" top="180" left="400" width="100" height="30" zIndex="3" />
-    <Widget xsi:type="widgets.brease.LanguageSelector" id="LanguageSelector1" top="420" left="460" width="100" height="30" zIndex="4" />
+    <Widget xsi:type="widgets.brease.LanguageSelector" id="LanguageSelector1" top="400" left="460" width="100" height="30" zIndex="4" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputSetTemperature1" top="235" left="100" width="100" height="30" zIndex="5" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputActTemperature1" top="235" left="400" width="100" height="30" zIndex="6" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.MeasurementSystemSelector" id="MeasurementSystemSelector1" top="400" left="320" width="100" height="30" zIndex="7" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnSetToDefault" top="340" left="360" width="200" height="30" zIndex="8" text="$IAT/BtnSetToDefault" />
   </Widgets>
 </Content>

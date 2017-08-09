@@ -13,7 +13,7 @@
     <BindingsSet refId="MyBinding" />
   </BindingsSets>
   <EventBindingsSets>
-    <!--<EventBindingsSet refId="" />-->
+    <EventBindingsSet refId="EventBinding" />
   </EventBindingsSets>
   <Dialogs>
     <!--<Dialog refId="" />-->

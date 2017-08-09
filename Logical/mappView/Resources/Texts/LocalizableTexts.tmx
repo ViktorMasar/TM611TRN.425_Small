@@ -48,5 +48,13 @@
         <seg>Logged in as:</seg>
       </tuv>
     </tu>
+    <tu tuid="BtnSetToDefault">
+      <tuv xml:lang="de">
+        <seg>Auf Standard setzen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set to dafault</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
