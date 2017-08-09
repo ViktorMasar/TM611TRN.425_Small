@@ -40,5 +40,13 @@
         <seg>Alarm Page</seg>
       </tuv>
     </tu>
+    <tu tuid="LabelLogging">
+      <tuv xml:lang="de">
+        <seg>Angemeldet als:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Logged in as:</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
