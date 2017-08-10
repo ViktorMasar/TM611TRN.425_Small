@@ -7,7 +7,7 @@
 			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentMainPage" widgetRefId="BtnSetToDefault" event="Click" />
 			<EventHandler>
 				<Action>
-					<Target xsi:type="opcUa.NodeAction" refId="AsGlobalPV:SetTemperature" >
+					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:SetTemperature" >
 						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="35" />
 					</Target>
 				</Action>
@@ -42,7 +42,7 @@
 				</Action>
 			</EventHandler>	
 		</EventBinding>
-	
+
 		<EventBinding>
 			<Source xsi:type="widgets.brease.Button.Event" contentRefId="contentLogin" widgetRefId="ButtonClose" event="Click" />
 			<EventHandler>
@@ -52,13 +52,34 @@
 					</Target>
 				</Action>
 			</EventHandler>	
+		</EventBinding>		
+		
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentMainPage" widgetRefId="ButtonMsgBox" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+					<Method xsi:type="clientSystem.Action.ShowMessageBox" type="OKCancel" message="Are you sure?" header="Reset SetTemperature!" icon="Warning"  />
+					</Target>
+					<Result>
+						<ResultHandler condition="result = 4">
+							<Action>
+								<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:SetTemperature" >
+									<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="30" />
+								</Target>
+							</Action>
+						</ResultHandler>
+					</Result>					
+				</Action>
+			</EventHandler>	
 		</EventBinding>
+
 		<!-- **********************************************************
 			 * source tempates => copy them to your EventBinding Source
 		     * change elements to your requirements
 		     * for further possible Events refer to help system
 		     ********************************************************** -->
-    <!--<Source xsi:type="opcUa.Event" refId="::Program:boolVariableEvent" event="ValueChanged" />-->
+    <!--<Source xsi:type="opcUa.Event" refId="::Program:boolVariableEvent" event="ValueChanged" />>-->
 
     <!--<Source xsi:type="session.Event" refId="sessionVariable" event="ValueChanged" />-->
 
