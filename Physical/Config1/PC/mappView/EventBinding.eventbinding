@@ -7,7 +7,7 @@
 			<Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentMainPage" widgetRefId="BtnSetToDefault" event="Click" />
 			<EventHandler>
 				<Action>
-					<Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:SetTemperature" >
+					<Target xsi:type="opcUa.NodeAction" refId="AsGlobalPV:SetTemperature" >
 						<Method xsi:type="opcUa.NodeAction.SetValueNumber" value="35" />
 					</Target>
 				</Action>
@@ -32,7 +32,28 @@
 			</EventHandler>			
 		</EventBinding>
 	
-    <!-- **********************************************************
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Image.Event" contentRefId="ContentTop" widgetRefId="Image1" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+					<Method xsi:type="clientSystem.Action.OpenDialog" dialogId="DialogLogin" mode="modal" />
+					</Target>
+				</Action>
+			</EventHandler>	
+		</EventBinding>
+	
+		<EventBinding>
+			<Source xsi:type="widgets.brease.Button.Event" contentRefId="contentLogin" widgetRefId="ButtonClose" event="Click" />
+			<EventHandler>
+				<Action>
+					<Target xsi:type="clientSystem.Action">
+						<Method xsi:type="clientSystem.Action.CloseDialog" dialogId="DialogLogin" />
+					</Target>
+				</Action>
+			</EventHandler>	
+		</EventBinding>
+		<!-- **********************************************************
 			 * source tempates => copy them to your EventBinding Source
 		     * change elements to your requirements
 		     * for further possible Events refer to help system

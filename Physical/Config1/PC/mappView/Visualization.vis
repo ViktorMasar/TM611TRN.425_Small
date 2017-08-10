@@ -16,7 +16,7 @@
     <EventBindingsSet refId="EventBinding" />
   </EventBindingsSets>
   <Dialogs>
-    <!--<Dialog refId="" />-->
+    <Dialog refId="DialogLogin" />
   </Dialogs>
   <Contents>
     <!--<Content refId="" />-->
