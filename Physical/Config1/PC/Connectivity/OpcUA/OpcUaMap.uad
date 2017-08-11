@@ -66,6 +66,22 @@
           </Property>
         </Variable>
       </GlobalVariables>
+      <Task Name="Program" Enable="True">
+        <Variable Name="aiTankLevel" Enable="True">
+          <Property BrowseName="0:EngineeringUnits">
+            <Value>
+              <Description>
+                <Text>cubic metre</Text>
+              </Description>
+              <DisplayName>
+                <Text>m³</Text>
+              </DisplayName>
+              <UnitId>5067857</UnitId>
+              <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+            </Value>
+          </Property>
+        </Variable>
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

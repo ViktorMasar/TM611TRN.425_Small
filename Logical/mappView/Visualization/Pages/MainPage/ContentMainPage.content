@@ -3,7 +3,7 @@
   <Widgets>
     <Widget xsi:type="widgets.brease.Button" id="Button1" top="80" left="100" width="100" height="30" zIndex="0" text="Button1" style="Command1" />
     <Widget xsi:type="widgets.brease.Button" id="ButtonMsgBox" top="80" left="400" width="100" height="30" zIndex="1" text="MsgBox" bold="false" style="Operate1" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputSetTemperature" top="180" left="100" width="100" height="30" zIndex="2" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputSetTemperature" top="180" left="100" width="100" height="30" zIndex="2" permissionOperate="['Service', 'Supervisor']" permissionView="['Operator', 'Service', 'Supervisor']" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputActTemperature" top="180" left="400" width="100" height="30" zIndex="3" />
     <Widget xsi:type="widgets.brease.LanguageSelector" id="LanguageSelector1" top="400" left="460" width="100" height="30" zIndex="4" />
     <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputSetTemperature1" top="235" left="100" width="100" height="30" zIndex="5" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" />
