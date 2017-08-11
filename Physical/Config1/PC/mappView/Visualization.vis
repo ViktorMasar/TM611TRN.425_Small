@@ -5,7 +5,8 @@
     <Page refId="MainPage"/>
     <Page refId="ServicePage"/>
     <Page refId="AlarmPage"/>		
-  </Pages>
+		<Page refId="ServicePageLineChart"/>		
+	</Pages>
   <Navigations>
     <Navigation refId="AutoNavigation" />
   </Navigations>  

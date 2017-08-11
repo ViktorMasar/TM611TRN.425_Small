@@ -4,14 +4,22 @@
     <NavigationPath refId="MainPage">
       <Destination refId="ServicePage" index="0" />
       <Destination refId="AlarmPage" index="1" />
+			<Destination refId="ServicePageLineChart" index="2" />
 		</NavigationPath>		
 		<NavigationPath refId="ServicePage">
 			<Destination refId="MainPage" index="0" />
 			<Destination refId="AlarmPage" index="1" />
+			<Destination refId="ServicePageLineChart" index="2" />
+		</NavigationPath>		
+		<NavigationPath refId="ServicePageLineChart">
+			<Destination refId="MainPage" index="0" />
+			<Destination refId="AlarmPage" index="1" />
+			<Destination refId="ServicePage" index="2" />
 		</NavigationPath>		
 		<NavigationPath refId="AlarmPage">
 			<Destination refId="MainPage" index="0" />
 			<Destination refId="ServicePage" index="1" />
-		</NavigationPath>		
+			<Destination refId="ServicePageLineChart" index="2" />
+		</NavigationPath>	
 	</NavigationPaths>
 </ndef:Navigation>

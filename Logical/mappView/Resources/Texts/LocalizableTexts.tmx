@@ -56,5 +56,13 @@
         <seg>Set to dafault</seg>
       </tuv>
     </tu>
+    <tu tuid="ServicePageLineChart">
+      <tuv xml:lang="de">
+        <seg>LineChart Seite</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>LineChart Page</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

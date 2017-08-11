@@ -5,6 +5,7 @@
     <Object Type="Package" Description="AreaContents">AreaContents</Object>
     <Object Type="Package">MainPage</Object>
     <Object Type="Package">ServicePage</Object>
+    <Object Type="Package">ServicePageLineChart</Object>
     <Object Type="Package">AlarmPage</Object>
   </Objects>
 </Package>
