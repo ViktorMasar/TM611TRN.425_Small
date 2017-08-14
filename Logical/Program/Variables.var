@@ -1,4 +1,6 @@
 VAR
 	MTBasicsPT1_0 : MTBasicsPT1;
 	aiTankLevel : USINT;
+	arrayVm : ARRAY[0..99] OF UINT;
+	i : INT;
 END_VAR

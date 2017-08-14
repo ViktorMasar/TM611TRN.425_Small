@@ -23,4 +23,16 @@ PROGRAM _CYCLIC
 	*)
 	aiTankLevel := aiTankLevel + 1;
 	
+	(*
+		Generate values in array for LineChart	
+	*)
+	arrayVm[0] := arrayVm[0] + 1;
+	FOR i:= 1 TO 99 DO
+		IF arrayVm[i] THEN
+		END_IF
+	END_FOR
+	
+	
+	
+	
 END_PROGRAM
